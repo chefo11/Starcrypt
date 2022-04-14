@@ -21,8 +21,8 @@ const PortfolioCoin = (props: PortfolioCoinsProps) => {
               <Text style={styles.symbol}>{symbol}</Text>
           </View>
       </View>
-      <View>
-          <Text style={styles.name}>${valueUSD}</Text>
+      <View style={styles.right}>
+          <Text style={styles.value}>${valueUSD}</Text>
           <Text style={styles.amount}>{symbol} {amount}</Text>
       </View>
     </View>

@@ -25,17 +25,64 @@ const PortfolioCoins= [{
   symbol : 'ETH',
   amount : 1.40,
   valueUSD : 723.00,
+},{
+  id : '4',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
+},{
+  id : '5',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
+},{
+  id : '6',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
+},{
+  id : '7',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
+},{
+  id : '8',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
+},{
+  id : '9',
+  name : 'Ethereum',
+  image: 'https://cdn.pixabay.com/photo/2021/05/24/09/15/ethereum-logo-6278329__480.png',
+  symbol : 'ETH',
+  amount : 1.40,
+  valueUSD : 723.00,
 },
 ]
 const PorfolioScreen = () => {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={image} />
-      <View style={styles.balanceContainer}>
-        <Text style={styles.label}>Porfolio Balance</Text>
-        <Text style={styles.balance}>$690.820</Text>
-      </View>
+    
       <FlatList 
+        showsVerticalScrollIndicator={false}
+        ListHeaderComponentStyle={{alignItems:'center'}}
+        ListHeaderComponent={()=>(<>
+          <Image style={styles.image} source={image} />
+          <View style={styles.balanceContainer}>
+            <Text style={styles.label}>Porfolio Balance</Text>
+            <Text style={styles.balance}>$690.820</Text>
+          </View>
+        </>)}
         style={{width:'100%'}}
         data={PortfolioCoins} renderItem={({item}) => <PortfolioCoin PortfolioCoins={item} />}/>
     </View>
