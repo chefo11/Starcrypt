@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     image: {
         height: 175,
         resizeMode: 'contain',
-        marginLeft: 40
+        //marginLeft: 40,
     },
     label: {
        fontSize: 18,
