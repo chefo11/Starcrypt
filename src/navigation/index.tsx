@@ -75,9 +75,8 @@ function RootNavigator() {
       <Stack.Screen
         name="CoinExchange"
         component={CoinExchangeScreen}
-        options={{ headerShown: false }}
+        // options={{ headerShown: false }}
       />
-
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
