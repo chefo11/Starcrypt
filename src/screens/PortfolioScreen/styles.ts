@@ -4,22 +4,25 @@ const styles = StyleSheet.create({
     container: {
         flex: 1, 
         alignItems: 'center', 
-        padding: 20
+        padding: 20,
+        backgroundColor: '#fff',
     },
     image: {
-        height: "50%",
-        aspectRatio: 1,
+        height: 175,
+        resizeMode: 'contain',
     },
-    header1: {
-        fontSize: 25,
-        fontWeight: "bold",
-        marginTop: 50,
-        marginBottom: 15, 
+    balanceContainer:{
+        marginVertical: 20,
+        width: "100%",
     },
-    header2: {
-        fontSize: 20,
-        textAlign: "center",
-        color: "#707070",
+    label: {
+       fontSize: 18,
+       fontWeight: 'bold',
+       color: '#585858',
+    },
+    balance: {
+        fontSize: 36,
+        fontWeight: 'bold',
     },
 });
 export default styles;
