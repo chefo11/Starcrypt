@@ -7,6 +7,7 @@ import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
   Alert,
+  Platform,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import styles from "./styles";
@@ -45,11 +46,13 @@ const CoinExchangeScreen = () => {
     if (coinAmount != "" && parseFloat(coinAmount) > 0) {
       if (isBuy && parseFloat(coinUSDValue) > maxUSD) {
         Alert.alert(`Not enough USD coins. Max: ${maxUSD}`);
+        return;
       }
       if (!isBuy && parseFloat(coinAmount) > coinData?.amount) {
         Alert.alert(
           `Not enough ${coinData?.symbol} coins. Max ${coinData.symbol}: ${coinData.amount}`
         );
+        return;
       }
     }
     Alert.alert("Please enter coin amount");
