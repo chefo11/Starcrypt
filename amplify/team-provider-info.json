@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-starcrypt-dev-10131-authRole",
+      "UnauthRoleArn": "arn:aws:iam::259886269753:role/amplify-starcrypt-dev-10131-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::259886269753:role/amplify-starcrypt-dev-10131-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-starcrypt-dev-10131-deployment",
+      "UnauthRoleName": "amplify-starcrypt-dev-10131-unauthRole",
+      "StackName": "amplify-starcrypt-dev-10131",
+      "StackId": "arn:aws:cloudformation:eu-west-1:259886269753:stack/amplify-starcrypt-dev-10131/2ff2a5f0-d899-11ec-a90c-068f80f01fef",
+      "AmplifyAppId": "d1z7a9o8zeqnga"
+    }
+  }
+}

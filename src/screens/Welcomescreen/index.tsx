@@ -2,7 +2,7 @@ import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
 import styles from "./styles";
 const image = require("../../../assets/images/Saly-1.png");
-const googleButtonImage = require("../../../assets/images/Saly-1.png");
+const googleButtonImage = require("../../../assets/images/google_Signin.png");
 
 const WelcomeScreen = () => {
   const signInGoogle = () => {};

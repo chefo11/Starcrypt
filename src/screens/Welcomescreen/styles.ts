@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   image: {
-    height: "50%",
+    height: "40%",
     aspectRatio: 1,
   },
   header1: {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   googleButton: {
     marginTop: "auto",
     marginBottom: 50,
-    width: "70%",
+    width: "90%",
   },
   buttonImage: {
     width: "100%",
